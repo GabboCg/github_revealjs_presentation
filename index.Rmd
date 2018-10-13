@@ -1,0 +1,66 @@
+---
+title: false
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: libs
+    reveal_plugins: ["zoom"]
+    mathjax: null
+    transition: fade
+    css: ["static/css/styles.css", "static/css/custom.css"]
+    incremental: true
+    center: false
+    theme: simple
+    fig_width: 6
+    fig_height: 3.5
+    reveal_options:
+      slideNumber: true
+      controls: false
+      mouseWheel: false
+      minScale: 1.0
+      maxScale: 1.0
+editor_options: 
+  chunk_output_type: console
+---
+
+# <span>
+<span style="font-size: 120%; font-family: 'Bangers', cursive;">
+GitHub</span><br>
+<span style="font-size: 80%; font-family: 'Special Elite', cursive;">
+Donde las ideas se comparten </span><br><br>
+<span style="font-size: 70%">Gabriel Cabrera | FEN UChile 2018</span>
+</span> { .center .white data-background="static/imgs/hero.jpg"}
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dev = "svg",
+  cache = TRUE,
+  cache.path = ".cache/",
+  fig.path = "static/imgs/slides/",
+  fig.width = 13,
+  fig.height = 7
+)
+
+library(icon)
+library(jbkmisc)
+library(tidyverse)
+library(lubridate)
+
+theme_pres <- theme_jbk(
+  base_family = "Roboto Condensed",
+  # plot_margin = marginº(1, 1, 1, 1, unit = "pt"),
+  base_size = 17
+  ) + 
+  theme(
+    legend.position = "none",
+    axis.title.x = element_text(size = 18),
+    axis.title.y = element_text(size = 18)
+    )
+
+theme_set(theme_pres)
+```
+
+## ¡Hola! <br> <small><small>No encontré una mejor foto,<br>puse la mejor</small></small> { .left data-background="static/imgs/hello.gif" }
