@@ -24,12 +24,12 @@ editor_options:
 ---
 
 # <span>
-<span style="font-size: 120%; font-family: 'Bangers', cursive;">
+<span style="color: #ffd700; font-size: 120%; font-family: 'Bangers', cursive;">
 GitHub</span><br>
-<span style="font-size: 80%; font-family: 'Special Elite', cursive;">
+<span style="color: #ffd700; font-size: 80%; font-family: 'Special Elite', cursive;">
 Donde las ideas se comparten </span><br><br>
-<span style="font-size: 70%">Gabriel Cabrera | FEN UChile 2018</span>
-</span> { .center .white data-background="static/imgs/hero.jpg"}
+<span style="color: #ffd700; font-size: 70%">Gabriel Cabrera | FEN UChile 2018</span>
+</span> { .center .white data-background-video="static/videos/Time_lapse_Shibuya_Crossing.mp4"} 
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
@@ -64,3 +64,14 @@ theme_set(theme_pres)
 ```
 
 ## ¡Hola! <br> <small><small>No encontré una mejor foto,<br>puse la mejor</small></small> { .left data-background="static/imgs/hello.gif" }
+
+## { data-background="static/imgs/stars-bg.jpg" }
+
+<br>
+<br>
+<div style="text-align: left;">
+<span style="color: #4ee; font-size: 150%; font-weight:bold">
+Hace poco tiempo,<br>
+en una galaxia no tan lejana...
+</div>
+</span>
