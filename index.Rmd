@@ -25,11 +25,11 @@ editor_options:
 
 # <span>
 <span style="color: #FAFAD2; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">
-GitHub
+¿Perdone, tiene un momento para hablar sobre Git y GittHub?
 </span>
 <br>
 <span style="color: #FAFAD2; font-size: 80%; font-family: 'Special Elite', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">
-Donde las ideas se comparten 
+compartamos las ideas... 
 </span>
 <br>
 <br>
@@ -81,10 +81,91 @@ en una galaxia no tan lejana...
 </div>
 </span>
 
-## <small><small> Exactamente el 19 de Octubre del 2008, <br> se fundó la plataforma...</small></small> <br> GitHub { .left data-background="static/imgs/octocat.png" data-background-size="500px"}
+
+## <small><small> Exactamente el 7 de Abril del 2005, <br> se lanzó...</small></small> <br> Git... <br> <small><small> software de control de versiones diseñado por...</small></small> Linus Torvalds { .left data-background="static/imgs/git.png" data-background-size="500px"}
 
 
-## { .left data-background="static/imgs/hello.gif" }
+## <small><small> y el 19 de Octubre del 2008, <br> se fundó la plataforma...</small></small> <br> GitHub { .left data-background="static/imgs/octocat.png" data-background-size="500px"}
+
+## Pero...¿por qué Git?
+
+- Funciona con un sistema de **version control** <span class="fragment"><small>¿Qué es?</small>
+- Maneja la evolución de un conjunto de archivos - llamados **repositorios** - de manera estructurada.
+- Es como el **Track Changes** de Microsoft Word...pero con esteroides!!!
+
+## 
+
+- Ha sido reformado por la comunidad que realiza **data science**.
+- Permite contribuir en conjunto <span class="fragment"><small>esta habilidad se desarrolla</small>
 
 
+## y...¿por qué GitHub?
+
+
+- Existen cuatro servicios de **Hosting** gratis basado en **Git**. 
+
+## { .left data-background="static/imgs/hosting.png"}
+
+## { .left data-background="static/imgs/hello.gif"}
+
+## Some title 
+
+```{r, echo = FALSE, eval = TRUE, warning=FALSE, message=FALSE}
+if(!require("pacman")) install.packages("pacman")
+p_load("tidyverse", "plotly", "shiny")
+
+git_data <- read_csv("dataset/repositories_data.csv") 
+
+chart <- git_data %>% 
+            select(Language) %>% 
+            group_by(Language) %>% 
+            na.omit() %>% 
+            mutate(n = n()) %>% 
+            arrange(desc(n)) %>% 
+            filter(row_number(Language) == 1) %>% 
+            as_factor(Language, Language)
+```
+
+```{r, eval=TRUE, echo=FALSE, fig.align='center'}
+plotly_bar <- plot_ly(data = chart,
+                      x = ~ Language,
+                      y = ~ n,
+                      name = "SF Zoo",
+                      type = "bar", width = 1000, height = 500) %>% 
+              layout(
+              xaxis = list(categoryarray = ~Language, categoryorder = "array"),
+              showlegend = FALSE)
+
+div(plotly_bar, align = "center")
+```
+
+
+## Some title
+
+```{r, echo = FALSE, eval = TRUE, warning=FALSE, message=FALSE}
+git_data <- read_csv("dataset/repositories_data.csv") 
+
+pie <- git_data %>% 
+       select(Language) %>% 
+       group_by(Language) %>% 
+       na.omit() %>% 
+       mutate(n = n()) %>% 
+       arrange(desc(n)) %>% 
+       filter(row_number(Language) == 1) %>% 
+       as_factor(Language, Language) %>% 
+       head(5)
+```
+
+```{r, eval=TRUE, echo=FALSE, fig.align='center'}
+plotly_pie <- plot_ly(data = pie,
+                      labels = ~ Language,
+                      values = ~ n,
+                      name = "Lenguajes",
+                      type = "pie", width = 1000, height = 500) %>% 
+              layout(
+              xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+              yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+div(plotly_pie, align = "center")
+```
 

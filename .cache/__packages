@@ -1,0 +1,17 @@
+base
+icon
+jbkmisc
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+lubridate
+pacman
+plotly
+bindrcpp
+shiny
