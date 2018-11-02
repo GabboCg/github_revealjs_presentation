@@ -156,8 +156,24 @@ pie %>%
 
 - A continuación se presentan los tres pasos a seguir:
 - Descargar e instalar [**git**](https://git-scm.com/downloads) <span class="fragment"><small>No es obligatario</small>
-- Crear una cuenta en [**GitHub**](https://github.com/).
+- Crear una cuenta en [**GitHub**](https://github.com/) y verificar con nuestro correo personal<span class="fragment"><small>Listo</small>.
 - Ir a  [**R Studio Cloud**](https://rstudio.cloud/) y hacer *log in* con nuestra cuenta de **GitHub**.
 
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  R Studio Cloud  { .center .white data-background="static/imgs/rstudio_cloud_dif.png"}
 
-##  { .left data-background="static/imgs/pill.gif"}
+## { .center data-background="static/imgs/rstudio_cloud.gif"}
+
+## <small><small> Ingresamos con nuestra <br> cuenta de... </small></small> <br> GitHub {.left data-background="static/imgs/log_in.png"}
+
+## {.left data-background="static/imgs/proyect.png"}
+
+## Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
+
+-
+-
+-
+
+## {.left data-background="static/imgs/activate_git.gif"}
+
+## {.left data-background="static/imgs/pill.gif"}
+
