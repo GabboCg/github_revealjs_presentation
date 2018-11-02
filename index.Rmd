@@ -131,9 +131,7 @@ chart %>%
   hc_yAxis(title = list(text = "Nº Repositorios")) 
 ```
 
-
-
-## Some title
+## Los 5 lenguajes de programación más usados
 
 ```{r, echo = FALSE, eval = TRUE, warning=FALSE, message=FALSE}
 git_data <- read_csv("dataset/repositories_data.csv") 
@@ -154,3 +152,12 @@ pie %>%
   hchart(type = "pie", hcaes(x = "Language", y = "n"), colorByPoint = TRUE, name = "Repositorios")
 ```
 
+## Manos a la obra
+
+- A continuación se presentan los tres pasos a seguir:
+- Descargar e instalar [**git**](https://git-scm.com/downloads) <span class="fragment"><small>No es obligatario</small>
+- Crear una cuenta en [**GitHub**](https://github.com/).
+- Ir a  [**R Studio Cloud**](https://rstudio.cloud/) y hacer *log in* con nuestra cuenta de **GitHub**.
+
+
+##  { .left data-background="static/imgs/pill.gif"}
