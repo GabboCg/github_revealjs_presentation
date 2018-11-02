@@ -169,11 +169,55 @@ pie %>%
 
 ## Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
 
--
--
--
+- Cada proyecto nuevo en **R Studio Cloud** se debe activar el uso de Git.
+- Tools > Proyects Options > Git/SVN > Version Control System > Git
+- Luego click en **yes** y nuestro proyecto tendrá disponible las características de Git.
 
 ## {.left data-background="static/imgs/activate_git.gif"}
+
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub { .center .white data-background="static/imgs/git_example_dif.png"}
+
+## Creando nuestro primer repositorio { .center data-background="static/imgs/git_example_dif.png"}
+
+- Debemos crear el repositorio desde GitHub. 
+- Los camandos necesarios para "linkear" el repositorio con **R** (**R Studio Cloud**), los veremos una vez generado el repositorio.  
+
+## {.left data-background="static/imgs/repository.gif"}
+
+## Comandos para usar Git
+
+- Hasta ahora no hemos realizado ningún **commit**, por ende, debemos identificarnos.
+
+```git
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+- Copiamos el código: <small>**…or push an existing repository from the command line**</small>
+
+```git
+git remote add origin https://github.com/TestNCC1801/primer_repositorio.git
+```
+
+## {.left data-background="static/imgs/set_one.gif"}
+
+## Comandos para usar Git
+
+- Click en Git.
+- Seleccionamos los archivos y escribimos "nuestro primer commit".
+- Click en commit.
+- Luego en la Terminal escribimos:
+
+```git
+git push -u origin master
+```
+
+## {.left data-background="static/imgs/set_two.gif"}
+
+## {.left data-background="static/imgs/repositorio.png"}
+
+## {.left data-background="static/imgs/create_readme.gif"}
+
+## {.left data-background="static/imgs/pull.gif"}
 
 ## {.left data-background="static/imgs/pill.gif"}
 

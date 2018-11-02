@@ -543,13 +543,53 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section><section id="configurar-git-en-r-studio-cloud" class="slide level2 center" data-background="static/imgs/windows_dif.jpg">
 <h2>Configurar git en R Studio Cloud</h2>
 <ul>
-<li class="fragment"></li>
-<li class="fragment"></li>
-<li class="fragment"></li>
+<li class="fragment">Cada proyecto nuevo en <strong>R Studio Cloud</strong> se debe activar el uso de Git.</li>
+<li class="fragment">Tools &gt; Proyects Options &gt; Git/SVN &gt; Version Control System &gt; Git</li>
+<li class="fragment">Luego click en <strong>yes</strong> y nuestro proyecto tendrá disponible las características de Git.</li>
 </ul>
 </section><section id="section-6" class="slide level2 left" data-background="static/imgs/activate_git.gif">
 <h2></h2>
-</section><section id="section-7" class="slide level2 left" data-background="static/imgs/pill.gif">
+</section><section id="github" class="slide level2 center white" data-background="static/imgs/git_example_dif.png">
+<h2><span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;"> GitHub</h2>
+</section><section id="creando-nuestro-primer-repositorio" class="slide level2 center" data-background="static/imgs/git_example_dif.png">
+<h2>Creando nuestro primer repositorio</h2>
+<ul>
+<li class="fragment">Debemos crear el repositorio desde GitHub.</li>
+<li class="fragment">Los camandos necesarios para “linkear” el repositorio con <strong>R</strong> (<strong>R Studio Cloud</strong>), los veremos una vez generado el repositorio.</li>
+</ul>
+</section><section id="section-7" class="slide level2 left" data-background="static/imgs/repository.gif">
+<h2></h2>
+</section><section id="comandos-para-usar-git" class="slide level2">
+<h2>Comandos para usar Git</h2>
+<ul>
+<li class="fragment">Hasta ahora no hemos realizado ningún <strong>commit</strong>, por ende, debemos identificarnos.</li>
+</ul>
+<pre class="git"><code>git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;</code></pre>
+<ul>
+<li class="fragment">Copiamos el código: <small><strong>…or push an existing repository from the command line</strong></small></li>
+</ul>
+<pre class="git"><code>git remote add origin https://github.com/TestNCC1801/primer_repositorio.git</code></pre>
+</section><section id="section-8" class="slide level2 left" data-background="static/imgs/set_one.gif">
+<h2></h2>
+</section><section id="comandos-para-usar-git-1" class="slide level2">
+<h2>Comandos para usar Git</h2>
+<ul>
+<li class="fragment">Click en Git.</li>
+<li class="fragment">Seleccionamos los archivos y escribimos “nuestro primer commit”.</li>
+<li class="fragment">Click en commit.</li>
+<li class="fragment">Luego en la Terminal escribimos:</li>
+</ul>
+<pre class="git"><code>git push -u origin master</code></pre>
+</section><section id="section-9" class="slide level2 left" data-background="static/imgs/set_two.gif">
+<h2></h2>
+</section><section id="section-10" class="slide level2 left" data-background="static/imgs/repositorio.png">
+<h2></h2>
+</section><section id="section-11" class="slide level2 left" data-background="static/imgs/create_readme.gif">
+<h2></h2>
+</section><section id="section-12" class="slide level2 left" data-background="static/imgs/pull.gif">
+<h2></h2>
+</section><section id="section-13" class="slide level2 left" data-background="static/imgs/pill.gif">
 <h2></h2>
 </section></section>
     </div>
