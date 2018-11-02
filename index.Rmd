@@ -55,6 +55,7 @@ library(icon)
 library(jbkmisc)
 library(tidyverse)
 library(lubridate)
+library(highcharter)
 
 theme_pres <- theme_jbk(
   base_family = "Roboto Condensed",
@@ -101,14 +102,13 @@ en una galaxia no tan lejana...
 
 ## y...¿por qué GitHub?
 
-
 - Existen cuatro servicios de **Hosting** gratis basado en **Git**. 
 
 ## { .left data-background="static/imgs/hosting.png"}
 
 ## { .left data-background="static/imgs/hello.gif"}
 
-## Some title 
+## Lenguajes de progrmación más utilizados 
 
 ```{r, echo = FALSE, eval = TRUE, warning=FALSE, message=FALSE}
 if(!require("pacman")) install.packages("pacman")
@@ -124,20 +124,13 @@ chart <- git_data %>%
             arrange(desc(n)) %>% 
             filter(row_number(Language) == 1) %>% 
             as_factor(Language, Language)
+
+chart %>% 
+  hchart(type = "column", hcaes(x = "Language", y = "n"), colorByPoint = TRUE, name = "Repositorios") %>% 
+  hc_xAxis(title = list(text = "Lenguajes")) %>% 
+  hc_yAxis(title = list(text = "Nº Repositorios")) 
 ```
 
-```{r, eval=TRUE, echo=FALSE, fig.align='center'}
-plotly_bar <- plot_ly(data = chart,
-                      x = ~ Language,
-                      y = ~ n,
-                      name = "SF Zoo",
-                      type = "bar", width = 1000, height = 500) %>% 
-              layout(
-              xaxis = list(categoryarray = ~Language, categoryorder = "array"),
-              showlegend = FALSE)
-
-div(plotly_bar, align = "center")
-```
 
 
 ## Some title
@@ -156,16 +149,8 @@ pie <- git_data %>%
        head(5)
 ```
 
-```{r, eval=TRUE, echo=FALSE, fig.align='center'}
-plotly_pie <- plot_ly(data = pie,
-                      labels = ~ Language,
-                      values = ~ n,
-                      name = "Lenguajes",
-                      type = "pie", width = 1000, height = 500) %>% 
-              layout(
-              xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-              yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
-
-div(plotly_pie, align = "center")
+```{r, fig.width=10, fig.height=10}
+pie %>% 
+  hchart(type = "pie", hcaes(x = "Language", y = "n"), colorByPoint = TRUE, name = "Repositorios")
 ```
 
