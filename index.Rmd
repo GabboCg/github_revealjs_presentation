@@ -258,9 +258,9 @@ git push -u origin master
 
 `r icon::fa_globe(color = "#6cc644")` [gcabrerag.rbind.io](https://gcabrerag.rbind.io)
 
-`r icon::fa_twitter(color = "#1da1f2")` [@GaboC_g](https://twitter.com/GaboC_g)
+`r icon::fa_twitter(color = "#1da1f2")` @[GaboC_g](https://twitter.com/GaboC_g)
 
-`r icon::fa_github(color = "#333333")` [@GaboCg](https://github.com/GaboCg)
+`r icon::fa_github(color = "#333333")` @[GaboCg](https://github.com/GaboCg)
 
 <small>
 slides: https://gabocg.github.io/github_revealjs_presentation/ <br>
