@@ -271,4 +271,3 @@ slides: https://gabocg.github.io/github_revealjs_presentation/ <br>
 </small>
 
 ## {.center data-background="static/imgs/the_end.gif"}
-
