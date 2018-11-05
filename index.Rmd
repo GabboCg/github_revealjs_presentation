@@ -163,9 +163,9 @@ pie %>%
 
 ## <span style="color: white; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> ¿Qué es R Studio Cloud?{ .white data-background="static/imgs/rstudio_cloud_dif.png"}
 
--  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Funciona con las características de R Studio (server)
-- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Se puede crear espacios de trabajos (Workspace) y compartirlos.
-- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Tiene guía para aprender R.
+-  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">Funciona con las características de R Studio (server)
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">Se puede crear espacios de trabajos (Workspace) y compartirlos.
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">Tiene guía para aprender R.
 
 ## { .center data-background="static/imgs/rstudio_cloud.gif"}
 
@@ -192,7 +192,7 @@ pie %>%
 
 ## Comandos para usar Git
 
-- Hasta ahora no hemos realizado ningún **commit**, por ende, debemos identificarnos.
+- Hasta ahora no hemos realizado ningún **commit**. Debemos identificarnos.
 
 <p class = "small">
 ```bash 
@@ -226,9 +226,9 @@ git push -u origin master
 
 ##  <span style="color: white; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Creando push & pull {.center data-background="static/imgs/repositorio_dif.png"}
 
-*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> **Push** nos permite "enviar/empujar" los archivos desde nuestro repositorio a **GitHub**.
-*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> **Pull** nos permite "Atraer/Halar" los archivos desde **GitHub** a nuestro repositorio.
-*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Generemos el archivo readme desde **GitHub** a nuestro repositorio.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">**Push** nos permite "enviar/empujar" los archivos desde nuestro repositorio a **GitHub**.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">**Pull** nos permite "Atraer/Halar" los archivos desde **GitHub** a nuestro repositorio.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">Generemos el archivo readme desde **GitHub** a nuestro repositorio.
 
 ## {.left data-background="static/imgs/create_readme.gif"}
 
@@ -260,7 +260,6 @@ git push -u origin master
 <span style="font-size: 80%; font-family: 'Special Elite', cursive;">  </span><br>
 </small></span> 
 
-
 `r icon::fa_globe(color = "#6cc644")` [gcabrerag.rbind.io](https://gcabrerag.rbind.io)
 
 `r icon::fa_twitter(color = "#1da1f2")` @[GaboC_g](https://twitter.com/GaboC_g)
@@ -270,3 +269,5 @@ git push -u origin master
 <small>
 slides: https://gabocg.github.io/github_revealjs_presentation/ <br>
 </small>
+
+## {.center data-background="static/imgs/the_end.gif"}
