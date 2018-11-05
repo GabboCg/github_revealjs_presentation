@@ -10,6 +10,64 @@
   <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #008000; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.im { } /* Import */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #008080; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
 
@@ -477,6 +535,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <link href="libs/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
     <link href="libs/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
     <script src="libs/highchart-binding-0.5.0/highchart.js"></script>
+    <link href="libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
@@ -544,12 +603,12 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h2>Configurar git en R Studio Cloud</h2>
 <ul>
 <li class="fragment">Cada proyecto nuevo en <strong>R Studio Cloud</strong> se debe activar el uso de Git.</li>
-<li class="fragment">Tools &gt; Proyects Options &gt; Git/SVN &gt; Version Control System &gt; Git</li>
+<li class="fragment">Tools -&gt; Proyects Options -&gt; Git/SVN -&gt; Version Control System -&gt; Git</li>
 <li class="fragment">Luego click en <strong>yes</strong> y nuestro proyecto tendrá disponible las características de Git.</li>
 </ul>
 </section><section id="section-6" class="slide level2 left" data-background="static/imgs/activate_git.gif">
 <h2></h2>
-</section><section id="github" class="slide level2 center white" data-background="static/imgs/git_example_dif.png">
+</section><section id="github" class="slide level2 center" data-background="static/imgs/git_example_dif.png">
 <h2><span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;"> GitHub</h2>
 </section><section id="creando-nuestro-primer-repositorio" class="slide level2 center" data-background="static/imgs/git_example_dif.png">
 <h2>Creando nuestro primer repositorio</h2>
@@ -564,12 +623,16 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">Hasta ahora no hemos realizado ningún <strong>commit</strong>, por ende, debemos identificarnos.</li>
 </ul>
-<pre class="git"><code>git config --global user.email &quot;you@example.com&quot;
-git config --global user.name &quot;Your Name&quot;</code></pre>
+<p class="small">
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">git</span> config --global user.email <span class="st">&quot;you@example.com&quot;</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="fu">git</span> config --global user.name <span class="st">&quot;Your Name&quot;</span> </a></code></pre></div>
 <ul>
-<li class="fragment">Copiamos el código: <small><strong>…or push an existing repository from the command line</strong></small></li>
+<li class="fragment">Copiamos el código: <small><strong>…or push an existing repository from the command line</strong></small>
+<p class = "small"></li>
 </ul>
-<pre class="git"><code>git remote add origin https://github.com/TestNCC1801/primer_repositorio.git</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">git</span> remote add origin https://github.com/TestNCC1801/primer_repositorio.git</a></code></pre></div>
+</p>
+</p>
 </section><section id="section-8" class="slide level2 left" data-background="static/imgs/set_one.gif">
 <h2></h2>
 </section><section id="comandos-para-usar-git-1" class="slide level2">
@@ -580,17 +643,50 @@ git config --global user.name &quot;Your Name&quot;</code></pre>
 <li class="fragment">Click en commit.</li>
 <li class="fragment">Luego en la Terminal escribimos:</li>
 </ul>
-<pre class="git"><code>git push -u origin master</code></pre>
+<p class="small">
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">git</span> push -u origin master</a></code></pre></div>
+</p>
 </section><section id="section-9" class="slide level2 left" data-background="static/imgs/set_two.gif">
 <h2></h2>
-</section><section id="section-10" class="slide level2 left" data-background="static/imgs/repositorio.png">
+</section><section id="creando-push-pull" class="slide level2 center" data-background="static/imgs/repositorio_dif.png">
+<h2>Creando push &amp; pull</h2>
+<ul>
+<li class="fragment"><strong>Push</strong> nos permite “enviar/empujar” los archivos desde nuestro repositorio a <strong>GitHub</strong>.</li>
+<li class="fragment"><strong>Pull</strong> nos permite “Atraer/Halar” los archivos desde <strong>GitHub</strong> a nuestro repositorio.</li>
+<li class="fragment">Generemos el archivo readme desde <strong>GitHub</strong> a nuestro repositorio.</li>
+</ul>
+</section><section id="section-10" class="slide level2 left" data-background="static/imgs/create_readme.gif">
 <h2></h2>
-</section><section id="section-11" class="slide level2 left" data-background="static/imgs/create_readme.gif">
+</section><section id="section-11" class="slide level2 left" data-background="static/imgs/pull.gif">
 <h2></h2>
-</section><section id="section-12" class="slide level2 left" data-background="static/imgs/pull.gif">
+</section><section id="github-pages" class="slide level2 center" data-background="static/imgs/git_pages_dif.png">
+<h2><span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;"> GitHub Pages</h2>
+</section><section id="r-notebook" class="slide level2 center" data-background="static/imgs/git_pages_dif.png">
+<h2>R Notebook</h2>
+<ul>
+<li class="fragment">Generar un R Notebook o R Markdown con extensiòn html.</li>
+<li class="fragment">Guardarlo como index.Rmd y al compilarlo tendremos un archivo index.html.</li>
+<li class="fragment">Realizar un commit e ir a GitHub.</li>
+</ul>
+</section><section id="section-12" class="slide level2 center" data-background="static/imgs/github_pages.gif">
 <h2></h2>
-</section><section id="section-13" class="slide level2 left" data-background="static/imgs/pill.gif">
-<h2></h2>
+</section><section id="si-quieres-aprennder-mas-de" class="slide level2">
+<h2>Si quieres aprennder más de…</h2>
+<h3 id="git-github">Git &amp; GitHub</h3>
+<ul>
+<li class="fragment">Jenny Bryan: <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
+<li class="fragment">Hadley Wickham: <a href="http://r-pkgs.had.co.nz/git.html">R Packages</a></li>
+</ul>
+<h3 id="r-notebook-1">R Notebook</h3>
+<ul>
+<li class="fragment"><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a> por: Yihui Xie, J. J. Allaire &amp; Garrett Grolemund.</li>
+</ul>
+</section><section id="informacion-de-contacto" class="slide level2">
+<h2><span><small> <span style="font-size: 120%; font-family: &#39;Bangers&#39;, cursive;">Información de Contacto</span><br> <span style="font-size: 80%; font-family: &#39;Special Elite&#39;, cursive;"> </span><br> </small></span></h2>
+<p><i class="fas  fa-globe " style="color:#6cc644;"></i> <a href="https://gcabrerag.rbind.io">gcabrerag.rbind.io</a></p>
+<p><i class="fab  fa-twitter " style="color:#1da1f2;"></i> <span class="citation" data-cites="GaboC_g">@GaboC_g</span></p>
+<p><i class="fab  fa-github " style="color:#333333;"></i> <span class="citation" data-cites="GaboCg">@GaboCg</span></p>
+<p><small> slides: <a href="https://github.com/jbkunst/latin-r-meetup-history" class="uri">https://github.com/jbkunst/latin-r-meetup-history</a><br> charlas: <a href="http://www.userchile.cl/" class="uri">http://www.userchile.cl/</a> </small></p>
 </section></section>
     </div>
   </div>

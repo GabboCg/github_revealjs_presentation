@@ -11,6 +11,7 @@ output:
     incremental: true
     center: false
     theme: simple
+    highlight: haddock
     fig_width: 6
     fig_height: 3.5
     reveal_options:
@@ -170,12 +171,12 @@ pie %>%
 ## Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
 
 - Cada proyecto nuevo en **R Studio Cloud** se debe activar el uso de Git.
-- Tools > Proyects Options > Git/SVN > Version Control System > Git
+-  Tools -> Proyects Options -> Git/SVN -> Version Control System -> Git 
 - Luego click en **yes** y nuestro proyecto tendrá disponible las características de Git.
 
 ## {.left data-background="static/imgs/activate_git.gif"}
 
-## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub { .center .white data-background="static/imgs/git_example_dif.png"}
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub { .center data-background="static/imgs/git_example_dif.png"}
 
 ## Creando nuestro primer repositorio { .center data-background="static/imgs/git_example_dif.png"}
 
@@ -188,15 +189,18 @@ pie %>%
 
 - Hasta ahora no hemos realizado ningún **commit**, por ende, debemos identificarnos.
 
-```git
+<p class = "small">
+```bash 
 git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+git config --global user.name "Your Name" 
 ```
 - Copiamos el código: <small>**…or push an existing repository from the command line**</small>
-
-```git
+<p class = "small">
+```bash 
 git remote add origin https://github.com/TestNCC1801/primer_repositorio.git
 ```
+</p>
+</p>
 
 ## {.left data-background="static/imgs/set_one.gif"}
 
@@ -207,17 +211,58 @@ git remote add origin https://github.com/TestNCC1801/primer_repositorio.git
 - Click en commit.
 - Luego en la Terminal escribimos:
 
-```git
+<p class = "small">
+```bash
 git push -u origin master
 ```
+</p>
 
 ## {.left data-background="static/imgs/set_two.gif"}
 
-## {.left data-background="static/imgs/repositorio.png"}
+## Creando push & pull {.center data-background="static/imgs/repositorio_dif.png"}
+
+* **Push** nos permite "enviar/empujar" los archivos desde nuestro repositorio a **GitHub**.
+* **Pull** nos permite "Atraer/Halar" los archivos desde **GitHub** a nuestro repositorio.
+* Generemos el archivo readme desde **GitHub** a nuestro repositorio.
 
 ## {.left data-background="static/imgs/create_readme.gif"}
 
 ## {.left data-background="static/imgs/pull.gif"}
 
-## {.left data-background="static/imgs/pill.gif"}
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub Pages {.center data-background="static/imgs/git_pages_dif.png"}
 
+## R Notebook {.center data-background="static/imgs/git_pages_dif.png"}
+
+* Generar un R Notebook o R Markdown con extensiòn html.
+* Guardarlo como index.Rmd y al compilarlo tendremos un archivo index.html.
+* Realizar un commit e ir a GitHub.
+
+## {.center data-background="static/imgs/github_pages.gif"}
+
+## Si quieres aprennder más de...
+
+### Git & GitHub
+
+* Jenny Bryan: [Happy Git and GitHub for the useR](http://happygitwithr.com/)
+* Hadley Wickham: [R Packages](http://r-pkgs.had.co.nz/git.html)
+
+### R Notebook
+
+* [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) por: Yihui Xie, J. J. Allaire & Garrett Grolemund.
+
+## <span><small>
+<span style="font-size: 120%; font-family: 'Bangers', cursive;">Información de Contacto</span><br>
+<span style="font-size: 80%; font-family: 'Special Elite', cursive;">  </span><br>
+</small></span> 
+
+
+`r icon::fa_globe(color = "#6cc644")` [gcabrerag.rbind.io](https://gcabrerag.rbind.io)
+
+`r icon::fa_twitter(color = "#1da1f2")` @GaboC_g
+
+`r icon::fa_github(color = "#333333")` @GaboCg
+
+<small>
+slides: https://github.com/jbkunst/latin-r-meetup-history<br>
+charlas: http://www.userchile.cl/ 
+</small>

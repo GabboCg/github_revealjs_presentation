@@ -24,4 +24,7 @@
   font-family: "Bangers", cursive;
 }
 
+p.small {
+  margin: -1em;
+}
 
