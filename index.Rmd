@@ -176,7 +176,7 @@ pie %>%
 ## <span style="color: white ; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
 
 - <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Cada proyecto nuevo en **R Studio Cloud** se debe activar el uso de Git.
--  <span style="color: white; font-size: 70%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Tools `r emo::ji("arrow_right")` Proyects Options `r emo::ji("arrow_right")` Git/SVN `r emo::ji("arrow_right")` Version Control System `r emo::ji("leftwards_arrow_with_hook")`  Git 
+-  <span style="color: white; font-size: 70%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Tools `r emo::ji("arrow_right")` Proyects Options `r emo::ji("arrow_right")` Git/SVN `r emo::ji("arrow_right")` Version Control System `r emo::ji("arrow_heading_down")`  Git 
 - <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Luego click en **yes** y nuestro proyecto tendrá disponible las características de Git.
 
 ## {.left data-background="static/imgs/activate_git.gif"}
