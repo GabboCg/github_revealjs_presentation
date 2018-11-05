@@ -25,16 +25,16 @@ editor_options:
 ---
 
 # <span>
-<span style="color: #FAFAD2; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">
+<span style="color: white; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">
 ¿Perdone, tiene un momento para hablar sobre Git y GittHub?
 </span>
 <br>
-<span style="color: #FAFAD2; font-size: 80%; font-family: 'Special Elite', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">
+<span style="color: white; font-size: 80%; font-family: 'Special Elite', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">
 compartamos las ideas... 
 </span>
 <br>
 <br>
-<span style="color: #FAFAD2; font-size: 70%; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">
+<span style="color: white; font-size: 70%; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">
 Gabriel Cabrera | FEN UChile 2018
 </span>
 </span> { .center .white data-background-video="static/videos/Time_lapse_Shibuya_Crossing.mp4" data-background-video-loop="loop"} 
@@ -91,23 +91,22 @@ en una galaxia no tan lejana...
 
 ## Pero...¿por qué Git?
 
-- Funciona con un sistema de **version control** <span class="fragment"><small>¿Qué es?</small>
+- Funciona con un sistema de **version control**. <span class="fragment"><small>¿Qué es?</small>
 - Maneja la evolución de un conjunto de archivos - llamados **repositorios** - de manera estructurada.
 - Es como el **Track Changes** de Microsoft Word...pero con esteroides!!!
 
 ## 
 
 - Ha sido reformado por la comunidad que realiza **data science**.
-- Permite contribuir en conjunto <span class="fragment"><small>esta habilidad se desarrolla</small>
-
+- Permite contribuir en conjunto, esta habilidad se desarrolla.
 
 ## y...¿por qué GitHub?
 
 - Existen cuatro servicios de **Hosting** gratis basado en **Git**. 
+- La comunidad puede ver tus repositorios, sincronizar contigo y tal vez hacer cambios.
+- Puede almacenar repositorios privados, pero hay que pagar `r emo::ji("neutral_face")`.
 
 ## { .left data-background="static/imgs/hosting.png"}
-
-## { .left data-background="static/imgs/hello.gif"}
 
 ## Lenguajes de progrmación más utilizados 
 
@@ -132,7 +131,7 @@ chart %>%
   hc_yAxis(title = list(text = "Nº Repositorios")) 
 ```
 
-## Los 5 lenguajes de programación más usados
+## Top 5 Lenguajes de programación 
 
 ```{r, echo = FALSE, eval = TRUE, warning=FALSE, message=FALSE}
 git_data <- read_csv("dataset/repositories_data.csv") 
@@ -156,32 +155,38 @@ pie %>%
 ## Manos a la obra
 
 - A continuación se presentan los tres pasos a seguir:
-- Descargar e instalar [**git**](https://git-scm.com/downloads) <span class="fragment"><small>No es obligatario</small>
-- Crear una cuenta en [**GitHub**](https://github.com/) y verificar con nuestro correo personal<span class="fragment"><small>Listo</small>.
+- Descargar e instalar [**git**](https://git-scm.com/downloads). <span class="fragment"><small>No es obligatario</small>
+- Crear una cuenta en [**GitHub**](https://github.com/) y verificar con nuestro correo personal. <span class="fragment"><small>Listo</small>
 - Ir a  [**R Studio Cloud**](https://rstudio.cloud/) y hacer *log in* con nuestra cuenta de **GitHub**.
 
-## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  R Studio Cloud  { .center .white data-background="static/imgs/rstudio_cloud_dif.png"}
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">  R Studio Cloud  { .center .white data-background="static/imgs/rstudio_cloud_dif.png"}
+
+## <span style="color: white; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> ¿Qué es R Studio Cloud?{ .white data-background="static/imgs/rstudio_cloud_dif.png"}
+
+-  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Funciona con las características de R Studio (server)
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Se puede crear espacios de trabajos (Workspace) y compartirlos.
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Tiene guía para aprender R.
 
 ## { .center data-background="static/imgs/rstudio_cloud.gif"}
 
 ## <small><small> Ingresamos con nuestra <br> cuenta de... </small></small> <br> GitHub {.left data-background="static/imgs/log_in.png"}
 
-## {.left data-background="static/imgs/proyect.png"}
+## <small><small> Así es la ventana <br> de los </small></small> <br> proyectos...{.left .center data-background="static/imgs/proyect.png"}
 
-## Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
+## <span style="color: white ; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Configurar git en R Studio Cloud {.center data-background="static/imgs/windows_dif.jpg"}
 
-- Cada proyecto nuevo en **R Studio Cloud** se debe activar el uso de Git.
--  Tools -> Proyects Options -> Git/SVN -> Version Control System -> Git 
-- Luego click en **yes** y nuestro proyecto tendrá disponible las características de Git.
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Cada proyecto nuevo en **R Studio Cloud** se debe activar el uso de Git.
+-  <span style="color: white; font-size: 70%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Tools `r emo::ji("arrow_right")` Proyects Options `r emo::ji("arrow_right")` Git/SVN `r emo::ji("arrow_right")` Version Control System `r emo::ji("arrow_right")`  Git 
+- <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Luego click en **yes** y nuestro proyecto tendrá disponible las características de Git.
 
 ## {.left data-background="static/imgs/activate_git.gif"}
 
-## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub { .center data-background="static/imgs/git_example_dif.png"}
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">  GitHub { .center data-background="static/imgs/git_example_dif.png"}
 
-## Creando nuestro primer repositorio { .center data-background="static/imgs/git_example_dif.png"}
+##  <span style="color: white; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Creando nuestro primer repositorio { .center data-background="static/imgs/git_example_dif.png"}
 
-- Debemos crear el repositorio desde GitHub. 
-- Los camandos necesarios para "linkear" el repositorio con **R** (**R Studio Cloud**), los veremos una vez generado el repositorio.  
+-  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Debemos crear el repositorio desde GitHub. 
+-  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Los camandos necesarios para "linkear" el repositorio con **R** (**R Studio Cloud**), los veremos una vez generado el repositorio.  
 
 ## {.left data-background="static/imgs/repository.gif"}
 
@@ -219,23 +224,23 @@ git push -u origin master
 
 ## {.left data-background="static/imgs/set_two.gif"}
 
-## Creando push & pull {.center data-background="static/imgs/repositorio_dif.png"}
+##  <span style="color: white; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Creando push & pull {.center data-background="static/imgs/repositorio_dif.png"}
 
-* **Push** nos permite "enviar/empujar" los archivos desde nuestro repositorio a **GitHub**.
-* **Pull** nos permite "Atraer/Halar" los archivos desde **GitHub** a nuestro repositorio.
-* Generemos el archivo readme desde **GitHub** a nuestro repositorio.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> **Push** nos permite "enviar/empujar" los archivos desde nuestro repositorio a **GitHub**.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> **Pull** nos permite "Atraer/Halar" los archivos desde **GitHub** a nuestro repositorio.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Generemos el archivo readme desde **GitHub** a nuestro repositorio.
 
 ## {.left data-background="static/imgs/create_readme.gif"}
 
 ## {.left data-background="static/imgs/pull.gif"}
 
-## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 2px black, 3px 0 black, 0 -1px black;">  GitHub Pages {.center data-background="static/imgs/git_pages_dif.png"}
+## <span style="color: #F00; font-size: 150%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;">  GitHub Pages {.center data-background="static/imgs/git_pages_dif.png"}
 
-## R Notebook {.center data-background="static/imgs/git_pages_dif.png"}
+##  <span style="color: white; font-size: 120%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> R Notebook {.center data-background="static/imgs/git_pages_dif.png"}
 
-* Generar un R Notebook o R Markdown con extensiòn html.
-* Guardarlo como index.Rmd y al compilarlo tendremos un archivo index.html.
-* Realizar un commit e ir a GitHub.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Generemos un R Notebook o R Markdown con extensiòn html.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> Luego Guardelo como index.Rmd y al compilarlo tendremos un archivo index.html.
+*  <span style="color: white; font-size: 80%; font-family: 'Bangers', cursive; text-shadow: -1px 0 black, 0 5px black, 3px 0 black, 0 -1px black;"> FInalmente realizar un commit e ir a GitHub.
 
 ## {.center data-background="static/imgs/github_pages.gif"}
 
